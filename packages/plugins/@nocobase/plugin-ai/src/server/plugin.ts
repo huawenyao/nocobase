@@ -57,7 +57,7 @@ export class PluginAIServer extends Plugin {
    * These employees have powerful capabilities (coding, schema modification) and should be restricted to admins.
    */
   isBuilderAI(username: string) {
-    const BUILDER_AI_USERNAMES = ['nathan', 'orin', 'dara'];
+    const BUILDER_AI_USERNAMES = ['nathan', 'orin', 'dara', 'data-maintenance'];
     return BUILDER_AI_USERNAMES.includes(username);
   }
 
