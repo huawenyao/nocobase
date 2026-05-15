@@ -17,6 +17,7 @@ import translator from '../ai-employees/built-in/translator';
 // import nocobaseAssistant from '../ai-employees/built-in/nocobase-assistant';
 import emailAssistant from '../ai-employees/built-in/email-assistant';
 import dataVisualization from '../ai-employees/built-in/data-visualization';
+import dataMaintenance from '../ai-employees/built-in/data-maintenance';
 import type { AIEmployee } from '../../collections/ai-employees';
 import _ from 'lodash';
 
@@ -40,6 +41,7 @@ export class BuiltInManager {
     // nocobaseAssistant,
     emailAssistant,
     dataVisualization,
+    dataMaintenance,
   ];
   private builtInEmployeeMap = Object.fromEntries(this.builtInEmployees.map((x) => [x.username, x]));
 
